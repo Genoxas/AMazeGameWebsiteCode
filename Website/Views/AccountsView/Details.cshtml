@@ -1,0 +1,65 @@
+﻿@model Website.Account
+
+@{
+    ViewBag.Title = "Player Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Html.DisplayFor(model => model.Username)'s Stats</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GamesPlayed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GamesPlayed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GamesWon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GamesWon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kills)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kills)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deaths)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deaths)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemsUsed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemsUsed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PuzzlesCompleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PuzzlesCompleted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Player List", "Index")
+</p>
